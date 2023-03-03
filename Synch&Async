@@ -1,0 +1,22 @@
+const greekGods = [
+  "Aphrodite",
+  "Ares",
+  "Artemis",
+  "Athena",
+  "Poseidon",
+  "Zeus",
+];
+for (let i=0; i < greekGods.length; i++){
+    console.log(i +". "+greekGods[i])
+}
+for (let i=0; i < greekGods.length; i++){
+    if ( i === 2){
+        setTimeout(function () {
+  console.log(i +"."+greekGods[i]);
+}, 2000);
+
+    }else{
+    console.log(i +"."+greekGods[i])
+    }
+}
+

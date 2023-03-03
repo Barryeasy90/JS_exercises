@@ -1,0 +1,98 @@
+// const mentorCount = 100;
+// const traineeCount = 200;
+// checkIsTrue(mentorCount < traineeCount);
+
+// const capacity = 50;
+// const people = 8;
+// checkIsTrue(capacity > people);
+
+// const organisation = "Code your Future";
+// checkIsTrue(typeof organisation === "string");
+// checkIsTrue(organisation.startsWith("Code"));
+// checkIsTrue(organisation.includes("your"));
+// checkIsTrue(organisation.endsWith("Future"));
+
+// const mystery = FILL_ME_IN;
+// checkIsTrue(typeof mystery === "boolean");
+// checkIsTrue(!mystery);
+
+// Don't change anything below this point
+// var FILL_ME_IN;
+// function checkIsTrue(value1) {
+//   if (value1) {
+//     // "\x1b[32m%s\x1b[0m" will change console output to green
+//     console.log(
+//       "\x1b[32m%s\x1b[0m",
+//       "Yes, this expression evaluates to true! ✅"
+//     );
+//   } else {
+//     // "\x1b[31m%s\x1b[0m" will change console output to red
+//     console.log(
+//       "\x1b[31m%s\x1b[0m",
+//       "Sorry, this expression evaluates to false! ❌"
+//     );
+//   }
+// }
+// const num=2.505;
+// const twoDecimalsPlaces = num.toFixed(2);
+// console.log(twoDecimalsPlaces);
+// function formatPercentage(num) {
+//     if (num > 100) {
+//       num = 100
+//       return num.toFixed(2) + "%"
+//     }
+//     else {
+//       return num.toFixed(2) + "%"
+//     }
+//     }
+//     let number = formatPercentage(50);
+//     console.log(number);
+// function tidyUpStrings(arrayOfStrings) {
+//     for ( let i=0; i < arrayOfStrings.length(); i++){
+//       arrayOfStrings[i].replace("/"," ");
+//       arrayOfStrings[i].trim();
+//       arrayOfStrings[i].lowerCase();
+//     }
+// }
+
+// let names = ["/Barr","  Amadou ", "  Ramata", " Juldeh", " /Aicha  "]
+// for (let i = 0; i < names.length(); i++ ){
+//    tableNames = tidyUpStrings(names);
+//    console.log(tableNames[i])
+// }
+
+// let x = 2;
+// let a = 6;
+// let b = 11;
+
+// const f1 = function (a, b) {
+//   return a + b;
+// };
+
+// const f2 = function (a, b) {
+//   return a + b + x;
+// };
+
+// console.log(x);
+// console.log(a);
+// console.log(b);
+
+// for (let i = 0; i < 5; i++) {
+//   a = a + 1;
+//   if (i % 2 === 0) {
+//     const d = f2(i, x);
+//     console.log(d);
+//   } else {
+//     const e = f1(i, a);
+//     console.log(e);
+//   }
+// }
+function validate(num) {
+    if (typeof num === "number" && num % 2 === 0 && num < 100)
+    {return true;}
+    else {
+        return false;
+    }
+
+}
+console.log(validate(50));
